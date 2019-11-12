@@ -11,6 +11,7 @@ import androidx.core.content.ContextCompat;
 import com.wallaby.otaku.models.Anime;
 import com.wallaby.otaku.models.Chapitre;
 import com.wallaby.otaku.models.Manga;
+import com.wallaby.otaku.models.Movie;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -175,25 +176,23 @@ public class ExternalStorage {
     }
 
 
-//    public ArrayList<Movie> getAllMovies(){
-//        ArrayList<Movie> res = new ArrayList<>();
-//        File MovieFolder = new File(getSDcardPath() + "/" + ANIME_FOLDER_NAME);
-//
-//        for(File f : MovieFolder.listFiles()){
-//            String folder = f.getName();
-//
-//            if(folder.contains(".DS_Store") || folder.contains("._.DS_Store") ){
-//                continue;
-//            }
-//            else {
-//                String a = f.getPath();
-//                String b = f.getName();
-//                String c = f.getParent();
-////                res.add(new Movie(f.getPath(), f.getName()));
-//            }
-//        }
-//
-//        return res;
-//    }
+    public ArrayList<Movie> getAllMovies(){
+        ArrayList<Movie> res = new ArrayList<>();
+        File MovieFolder = new File(getSDcardPath() + "/" + MOVIE_FOLDER_NAME);
+
+        for(File f : MovieFolder.listFiles()){
+            String folder = f.getName();
+
+            if(folder.contains(".DS_Store") || folder.contains("._.DS_Store") ){
+                continue;
+            }
+            else {
+
+                res.add(new Movie(f.getName(), f.getPath()));
+            }
+        }
+
+        return res;
+    }
 
 }

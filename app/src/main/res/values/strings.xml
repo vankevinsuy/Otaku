@@ -6,6 +6,7 @@
     <string name="title_movie">Movie</string>
 
     <string name="resumeButton">Resume</string>
+    <string name="PlayButton">Play</string>
     <string name="exploreButton">Explore</string>
     <string name="lastChapitre">Last chapter : </string>
     <string name="currentChapitre">Current chapter : </string>

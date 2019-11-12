@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.wallaby.otaku.R;
+import com.wallaby.otaku.recyclerAdapters.FirstLevelMovieAdapter;
 import com.wallaby.otaku.recyclerAdapters.HomeAnimeAdapter;
 
 public class MovieFragment extends Fragment {
@@ -26,8 +27,8 @@ public class MovieFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
 
-//        mAdapter = new HomeAnimeAdapter( getContext());
-//        recyclerView.setAdapter(mAdapter);
+        mAdapter = new FirstLevelMovieAdapter(getContext());
+        recyclerView.setAdapter(mAdapter);
 
 
         return root;

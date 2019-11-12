@@ -1140,6 +1140,8 @@ id AnimeresumeButton
 id CTRL
 id FUNCTION
 id META
+id MovieName
+id MoviePlayButton
 id SHIFT
 id SYM
 id SaisonExplorerRecyclerview
@@ -1180,6 +1182,7 @@ id bottom
 id buttonPanel
 id cancel_action
 id cardviewHomeItemAnime
+id cardviewHomeItemMovie
 id cardviewHomeItemScan
 id center
 id center_horizontal
@@ -1455,6 +1458,7 @@ layout fragment_movie
 layout fragment_scan
 layout item_first_level_saison
 layout item_home_anime
+layout item_home_movie
 layout item_home_scan
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1480,9 +1484,11 @@ layout support_simple_spinner_dropdown_item
 layout view_carousel
 menu bottom_nav_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation mobile_navigation
 string Home
+string PlayButton
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

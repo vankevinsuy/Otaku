@@ -16,6 +16,10 @@
         "source": "/Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/43d10548910a2686de65fd51b2206c0d/material-1.0.0/res/anim/design_snackbar_out.xml"
     },
     {
+        "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
         "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/drawable-watch-v20_abc_dialog_material_background.xml.flat",
         "source": "/Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/2416e2a4ed3971a70d13592c2114d09d/appcompat-1.0.2/res/drawable-watch-v20/abc_dialog_material_background.xml"
     },
@@ -488,6 +492,10 @@
         "source": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
+        "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
         "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/2416e2a4ed3971a70d13592c2114d09d/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -598,6 +606,10 @@
     {
         "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/2416e2a4ed3971a70d13592c2114d09d/appcompat-1.0.2/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -930,6 +942,10 @@
     {
         "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "/Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/b75a270b5437985f08ea2772f5ba275b/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat",
@@ -1504,6 +1520,10 @@
         "source": "/Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/43d10548910a2686de65fd51b2206c0d/material-1.0.0/res/layout/design_navigation_menu.xml"
     },
     {
+        "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
         "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/drawable_videoicon.png.flat",
         "source": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/res/drawable/videoicon.png"
     },
@@ -1646,6 +1666,10 @@
     {
         "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/layout_item_home_movie.xml.flat",
+        "source": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/res/layout/item_home_movie.xml"
     },
     {
         "merged": "/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
