@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardviewHomeItemScan"
+    android:layout_width="match_parent"
+    android:layout_height="150sp"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:clipToPadding="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:foregroundGravity="center"
+    android:padding="20dp"
+    android:layout_marginBottom="10sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/item_background">
+
+        <ImageView
+            android:id="@+id/imageCover"
+            android:layout_height="match_parent"
+            android:layout_width="150sp"
+            android:layout_marginLeft="10sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10sp">
+
+            <TextView
+                android:id="@+id/mangaName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="10sp"
+                android:textColor="@color/Title_color"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/mangaLastChapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/Title_color"
+                android:layout_below="@id/mangaName"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/currentChapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/Title_color"
+                android:layout_below="@id/mangaLastChapter"
+                android:layout_centerHorizontal="true" />
+
+
+                <Button
+                    android:id="@+id/resumeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resumeButton"
+                    android:textColor="@color/button_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/button_color"/>
+
+                <Button
+                    android:id="@+id/exploreButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exploreButton"
+                    android:textColor="@color/button_text"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="@color/button_color"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_scan"
+        android:title="@string/title_Scan"
+        android:icon="@drawable/bookicon"/>
+
+    <item
+    android:id="@+id/navigation_anime"
+        android:title="@string/title_anime"
+        android:icon="@drawable/videoicon"/>
+
+    <item
+        android:id="@+id/navigation_movie"
+        android:title="@string/title_movie"
+        android:icon="@drawable/videoicon"/>
+
+</menu>
+    <!--android:icon="@drawable/ic_dashboard_black_24dp" ajouter une icone -->

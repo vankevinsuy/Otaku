@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Otaku</string>
+
+    <string name="title_Scan">Scan</string>
+    <string name="title_anime">Anime</string>
+    <string name="title_movie">Movie</string>
+
+    <string name="resumeButton">Resume</string>
+    <string name="exploreButton">Explore</string>
+    <string name="lastChapitre">Last chapter : </string>
+    <string name="currentChapitre">Current chapter : </string>
+    <string name="currentEpisode">Current episode : </string>
+    <string name="Home">Home</string>
+
+    <string name="quitAppTittle">Quitt app ?</string>
+    <string name="quitAppVerif">Are you sure you want to exit ?</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/baseRelativeView"
+    tools:context=".ui.VideoPlayingActivity"
+    android:background="@color/Lecture_color">
+
+    <TextView
+        android:id="@+id/videoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:textColor="@color/button_text"/>
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoView"
+        android:layout_centerInParent="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/play_and_stop"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:text="play"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            >
+        </ImageButton>
+
+        <SeekBar
+            android:id="@+id/videoSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginHorizontal="30sp"
+            android:layout_marginTop="20sp"
+            android:progressBackgroundTint="@color/colorPrimary"
+            android:backgroundTint="@color/button_color"
+            android:progressTint="@color/button_color"
+            android:thumbTint="@color/button_color"
+            android:visibility="gone"
+            >
+        </SeekBar>
+
+    </RelativeLayout>
+
+</RelativeLayout>

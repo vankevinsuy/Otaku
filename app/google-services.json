@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "743467550643",
+    "firebase_url": "https://otaku-d5b3c.firebaseio.com",
+    "project_id": "otaku-d5b3c",
+    "storage_bucket": "otaku-d5b3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743467550643:android:9527cdb1169914bcb56dc6",
+        "android_client_info": {
+          "package_name": "com.wallaby.otaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743467550643-s1713ghru90suf9p01mollqlngevv3a6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wallaby.otaku",
+            "certificate_hash": "b5d6b1ed43161d28c973fb3e660fcb8c4fda3f3a"
+          }
+        },
+        {
+          "client_id": "743467550643-2otuumotd5hrqf0afdjup5i3lj1ck1de.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEQfB0Mk26s0Mm4BRlkcCloA8xQ5tXxYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743467550643-2otuumotd5hrqf0afdjup5i3lj1ck1de.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
