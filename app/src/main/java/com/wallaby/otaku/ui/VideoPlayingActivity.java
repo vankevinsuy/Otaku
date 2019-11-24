@@ -2,6 +2,7 @@ package com.wallaby.otaku.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.wallaby.otaku.MainActivity;
 import com.wallaby.otaku.R;
 import com.wallaby.otaku.SDcardAccess.ExternalStorage;
 import com.wallaby.otaku.models.Anime;
@@ -170,4 +172,11 @@ public class VideoPlayingActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        finish();
+
+        startActivity(intent);
+    }
 }

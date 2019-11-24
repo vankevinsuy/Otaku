@@ -45,7 +45,7 @@ public class ExploreFirstLevel extends AppCompatActivity {
 
                 recyclerView = (RecyclerView) findViewById(R.id.firstLevelEpisodeOrChapterRecyclerview);
                 recyclerView.setHasFixedSize(true);
-                layoutManager = new GridLayoutManager(getApplicationContext(), 4);
+                layoutManager = new GridLayoutManager(getApplicationContext(), 3);
                 recyclerView.setLayoutManager(layoutManager);
 
                 mAdapter = new FirstLevelScanAdapter(getApplicationContext(), selected_manga);
@@ -83,7 +83,6 @@ public class ExploreFirstLevel extends AppCompatActivity {
                     recyclerView.setAdapter(mAdapter);
                 }
 
-
                 break;
         }
     }
@@ -92,7 +91,8 @@ public class ExploreFirstLevel extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(intent);
         finish();
+
+        startActivity(intent);
     }
 }

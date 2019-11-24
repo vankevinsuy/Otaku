@@ -268,27 +268,6 @@ public class LectureActivity extends AppCompatActivity {
         }
     }
 
-    //méthode de retour aux chapitres
-    @Override
-    public void onBackPressed() {
-
-        switch (single_or_continue){
-            case "single":
-                Intent intent = new Intent(getApplicationContext(), ExploreFirstLevel.class);
-                intent.putExtra("selected_manga",selected_manga);
-                intent.putExtra("selection","scan");
-                startActivity(intent);
-                finish();
-                break;
-
-            case "continue":
-                Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent2);
-                finish();
-                break;
-        }
-    }
-
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
@@ -313,4 +292,29 @@ public class LectureActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
+
+
+    //méthode de retour aux chapitres
+    @Override
+    public void onBackPressed() {
+
+        switch (single_or_continue){
+            case "single":
+                Intent intent = new Intent(getApplicationContext(), ExploreFirstLevel.class);
+                intent.putExtra("selected_manga",selected_manga);
+                intent.putExtra("selection","scan");
+                finish();
+
+                startActivity(intent);
+                break;
+
+            case "continue":
+                Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
+                finish();
+
+                startActivity(intent2);
+                break;
+        }
+    }
+
 }

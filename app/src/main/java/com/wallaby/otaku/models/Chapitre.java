@@ -50,7 +50,7 @@ public class Chapitre {
         return res;
     }
 
-    public int getLastPage(){
+    public int getNumLastPage(){
         int res = 0;
         File root = new File(folderPath);
         File[] content = root.listFiles();
@@ -74,6 +74,11 @@ public class Chapitre {
 
         return res;
     }
+
+    public String getFirstPagePath(){
+        return this.ListpagesPath.get(0);
+    }
+
 
     private void initData(){
         // set num chapitre

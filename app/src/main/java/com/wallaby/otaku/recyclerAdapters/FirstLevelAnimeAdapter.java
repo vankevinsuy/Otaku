@@ -10,6 +10,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.wallaby.otaku.ExploreFirstLevel;
 import com.wallaby.otaku.R;
 import com.wallaby.otaku.SDcardAccess.ExternalStorage;
 import com.wallaby.otaku.internal_database.OtakuDatabase;
@@ -80,6 +81,7 @@ public class FirstLevelAnimeAdapter extends RecyclerView.Adapter<FirstLevelAnime
                     Intent intent = new Intent(mContext, SaisonExplorerActivity.class);
                     intent.putExtra("selected_saison", anime.getListSaison().get(position).getNameSaison());
                     intent.putExtra("selected_anime", anime.getName());
+
                     mContext.startActivity(intent);
                 }
             });

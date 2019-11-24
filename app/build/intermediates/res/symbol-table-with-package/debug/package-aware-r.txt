@@ -1188,6 +1188,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id chapter_cardview
 id checkbox
 id chronometer
 id clip_horizontal
@@ -1227,6 +1228,7 @@ id fill_horizontal
 id fill_vertical
 id filled
 id firstLevelEpisodeOrChapterRecyclerview
+id firstPageImg
 id fixed
 id flow
 id forever
@@ -1283,6 +1285,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id num_chapter
 id outline
 id packed
 id parallax
@@ -1460,6 +1463,7 @@ layout item_first_level_saison
 layout item_home_anime
 layout item_home_movie
 layout item_home_scan
+layout item_scan_chapter_selection
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

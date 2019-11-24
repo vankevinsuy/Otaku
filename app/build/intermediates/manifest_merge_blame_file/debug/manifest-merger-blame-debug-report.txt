@@ -6,115 +6,119 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
-8-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml
+8-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml
+9-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-11-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:5:5-81
-11-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:5:22-78
+11-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:5:5-81
+11-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:5:22-78
 12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:6:5-80
-12-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:6:22-77
+12-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:6:22-77
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:7:5-66
-13-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:7:22-64
+13-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:7:5-66
+13-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:7:22-64
 14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->[com.google.firebase:firebase-database:16.0.4] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/548437be0218395dc7104874a2d8e609/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:5-79
-14-->[com.google.firebase:firebase-database:16.0.4] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/548437be0218395dc7104874a2d8e609/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:22-76
+14-->[com.google.firebase:firebase-database:16.0.4] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\efb161d48a8046e081dddd5537f994c1\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:5-79
+14-->[com.google.firebase:firebase-database:16.0.4] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\efb161d48a8046e081dddd5537f994c1\jetified-firebase-database-16.0.4\AndroidManifest.xml:22:22-76
 15
 16    <application
-16-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:9:5-34:19
+16-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:9:5-37:19
 17        android:allowBackup="true"
-17-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:10:9-35
+17-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:10:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.0.1] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/668f92656ea417a5dbfea6d82592adcd/core-1.0.1/AndroidManifest.xml:22:18-86
+18-->[androidx.core:core:1.0.1] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\668f92656ea417a5dbfea6d82592adcd\core-1.0.1\AndroidManifest.xml:22:18-86
 19        android:debuggable="true"
 20        android:icon="@mipmap/ic_launcher"
-20-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:11:9-43
+20-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:11:9-43
 21        android:label="@string/app_name"
-21-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:12:9-41
+21-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:12:9-41
 22        android:roundIcon="@mipmap/ic_launcher_round"
-22-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:13:9-54
+22-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:13:9-54
 23        android:supportsRtl="true"
-23-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:14:9-35
+23-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:14:9-35
 24        android:testOnly="true"
 25        android:theme="@style/AppTheme" >
-25-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:15:9-40
+25-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:15:9-40
 26        <activity android:name="com.wallaby.otaku.ui.anime.SaisonExplorerActivity" />
-26-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:16:9-78
-26-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:16:19-66
+26-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:16:9-78
+26-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:16:19-66
 27        <activity
-27-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:17:9-20:58
+27-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:17:9-20:58
 28            android:name="com.wallaby.otaku.ui.VideoPlayingActivity"
-28-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:18:13-52
+28-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:18:13-52
 29            android:screenOrientation="sensorLandscape"
-29-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:20:13-56
+29-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:20:13-56
 30            android:theme="@style/LectureVideoTheme" />
-30-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:19:13-53
+30-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:19:13-53
 31        <activity
-31-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:21:9-23:51
+31-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:21:9-24:51
 32            android:name="com.wallaby.otaku.ui.scan.LectureActivity"
-32-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:22:13-52
-33            android:theme="@style/LectureTheme" />
-33-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:23:13-48
-34        <activity android:name="com.wallaby.otaku.ExploreFirstLevel" />
-34-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:24:9-55
-34-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:24:19-52
-35        <activity
-35-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:25:9-33:20
-36            android:name="com.wallaby.otaku.MainActivity"
-36-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:26:13-41
-37            android:label="@string/app_name" >
-37-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:27:13-45
-38            <intent-filter>
-38-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:28:13-32:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:29:17-69
-39-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:29:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:31:17-77
-41-->/Users/van-kevinsuy/Desktop/Android_workspace/Otaku/app/src/main/AndroidManifest.xml:31:27-74
-42            </intent-filter>
-43        </activity>
-44        <activity
-44-->[com.google.android.gms:play-services-base:16.0.1] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/b75a270b5437985f08ea2772f5ba275b/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
-45            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-45-->[com.google.android.gms:play-services-base:16.0.1] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/b75a270b5437985f08ea2772f5ba275b/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
-46            android:exported="false"
-46-->[com.google.android.gms:play-services-base:16.0.1] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/b75a270b5437985f08ea2772f5ba275b/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
-47            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-47-->[com.google.android.gms:play-services-base:16.0.1] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/b75a270b5437985f08ea2772f5ba275b/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
-48
-49        <provider
-49-->[com.google.firebase:firebase-common:16.0.3] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/bdd2a37e5c826b3211ea502f7ef7fda1/jetified-firebase-common-16.0.3/AndroidManifest.xml:10:9-14:39
-50            android:name="com.google.firebase.provider.FirebaseInitProvider"
-50-->[com.google.firebase:firebase-common:16.0.3] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/bdd2a37e5c826b3211ea502f7ef7fda1/jetified-firebase-common-16.0.3/AndroidManifest.xml:11:13-77
-51            android:authorities="com.wallaby.otaku.firebaseinitprovider"
-51-->[com.google.firebase:firebase-common:16.0.3] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/bdd2a37e5c826b3211ea502f7ef7fda1/jetified-firebase-common-16.0.3/AndroidManifest.xml:12:13-72
-52            android:exported="false"
-52-->[com.google.firebase:firebase-common:16.0.3] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/bdd2a37e5c826b3211ea502f7ef7fda1/jetified-firebase-common-16.0.3/AndroidManifest.xml:13:13-37
-53            android:initOrder="100" />
-53-->[com.google.firebase:firebase-common:16.0.3] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/bdd2a37e5c826b3211ea502f7ef7fda1/jetified-firebase-common-16.0.3/AndroidManifest.xml:14:13-36
-54
-55        <meta-data
-55-->[com.google.android.gms:play-services-basement:16.0.1] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/c83b034f1d2f76b944d3bff8780faae0/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
-56            android:name="com.google.android.gms.version"
-56-->[com.google.android.gms:play-services-basement:16.0.1] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/c83b034f1d2f76b944d3bff8780faae0/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
-57            android:value="@integer/google_play_services_version" />
-57-->[com.google.android.gms:play-services-basement:16.0.1] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/c83b034f1d2f76b944d3bff8780faae0/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
-58
-59        <provider
-59-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/9c91dc75531254eaf4317c8148932eda/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
-60            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-60-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/9c91dc75531254eaf4317c8148932eda/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
-61            android:authorities="com.wallaby.otaku.lifecycle-process"
-61-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/9c91dc75531254eaf4317c8148932eda/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
-62            android:exported="false"
-62-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/9c91dc75531254eaf4317c8148932eda/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
-63            android:multiprocess="true" />
-63-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/van-kevinsuy/.gradle/caches/transforms-2/files-2.1/9c91dc75531254eaf4317c8148932eda/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
-64    </application>
-65
-66</manifest>
+32-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:22:13-52
+33            android:screenOrientation="portrait"
+33-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:24:13-49
+34            android:theme="@style/LectureTheme" />
+34-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:23:13-48
+35        <activity android:name="com.wallaby.otaku.ExploreFirstLevel" />
+35-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:25:9-55
+35-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:25:19-52
+36        <activity
+36-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:27:9-36:20
+37            android:name="com.wallaby.otaku.MainActivity"
+37-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:28:13-41
+38            android:label="@string/app_name"
+38-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:29:13-45
+39            android:screenOrientation="portrait" >
+39-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:30:13-49
+40            <intent-filter>
+40-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:31:13-35:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:32:17-69
+41-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:32:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:34:17-77
+43-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:34:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\d29f0b2a5cca9b6b735f0113936a57bc\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+47            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+47-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\d29f0b2a5cca9b6b735f0113936a57bc\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+48            android:exported="false"
+48-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\d29f0b2a5cca9b6b735f0113936a57bc\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+49            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+49-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\d29f0b2a5cca9b6b735f0113936a57bc\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+50
+51        <provider
+51-->[com.google.firebase:firebase-common:16.0.3] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\dd2bfdb4f5b00e622026faf5f331eaae\jetified-firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+52            android:name="com.google.firebase.provider.FirebaseInitProvider"
+52-->[com.google.firebase:firebase-common:16.0.3] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\dd2bfdb4f5b00e622026faf5f331eaae\jetified-firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+53            android:authorities="com.wallaby.otaku.firebaseinitprovider"
+53-->[com.google.firebase:firebase-common:16.0.3] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\dd2bfdb4f5b00e622026faf5f331eaae\jetified-firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+54            android:exported="false"
+54-->[com.google.firebase:firebase-common:16.0.3] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\dd2bfdb4f5b00e622026faf5f331eaae\jetified-firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+55            android:initOrder="100" />
+55-->[com.google.firebase:firebase-common:16.0.3] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\dd2bfdb4f5b00e622026faf5f331eaae\jetified-firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+56
+57        <meta-data
+57-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\d2ec7adaab832d4d9e3f5f0b5dc78028\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+58            android:name="com.google.android.gms.version"
+58-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\d2ec7adaab832d4d9e3f5f0b5dc78028\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+59            android:value="@integer/google_play_services_version" />
+59-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\d2ec7adaab832d4d9e3f5f0b5dc78028\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+60
+61        <provider
+61-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+62            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+62-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+63            android:authorities="com.wallaby.otaku.lifecycle-process"
+63-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+64            android:exported="false"
+64-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+65            android:multiprocess="true" />
+65-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+66    </application>
+67
+68</manifest>
