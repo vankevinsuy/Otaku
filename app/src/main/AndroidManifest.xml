@@ -13,16 +13,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.anime.SaisonExplorerActivity"></activity>
+        <activity android:name=".ui.anime.SaisonExplorerActivity"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".ui.VideoPlayingActivity"
             android:theme="@style/LectureVideoTheme"
             android:screenOrientation="sensorLandscape"/>
+
+
         <activity
             android:name=".ui.scan.LectureActivity"
-            android:theme="@style/LectureTheme"
+            android:theme="@style/LectureTheme" />
+
+
+        <activity android:name=".ExploreFirstLevel"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ExploreFirstLevel" />
 
         <activity
             android:name=".MainActivity"
@@ -34,6 +40,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
