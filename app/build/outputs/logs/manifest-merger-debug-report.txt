@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\30f87122a1c240aa7702e843df3a67cf\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\43d10548910a2686de65fd51b2206c0d\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\2416e2a4ed3971a70d13592c2114d09d\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
@@ -51,20 +51,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\vanke\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\b0258761e09ba69bc3c7bc9f6c71d3b2\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\ff12cc281f87118c6dbeead31942afb5\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\d5c3ac55f54e7be18a5143c57b0a7ada\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:2:11-69
@@ -83,7 +83,7 @@ MERGED from [com.google.firebase:firebase-database:16.0.4] C:\Users\vanke\.gradl
 	android:name
 		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:9:5-37:19
+ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:9:5-44:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\43d10548910a2686de65fd51b2206c0d\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\43d10548910a2686de65fd51b2206c0d\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\vanke\.gradle\caches\transforms-2\files-2.1\e88b13ae8ecbb63da81ec85463301b9c\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -121,47 +121,49 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\vanke\.gradle\
 	android:theme
 		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:15:9-40
 activity#com.wallaby.otaku.ui.anime.SaisonExplorerActivity
-ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:16:9-78
+ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:16:9-17:51
+	android:screenOrientation
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:17:13-49
 	android:name
 		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:16:19-66
 activity#com.wallaby.otaku.ui.VideoPlayingActivity
-ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:17:9-20:58
+ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:19:9-22:58
 	android:screenOrientation
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:20:13-56
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:22:13-56
 	android:theme
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:19:13-53
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:21:13-53
 	android:name
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:18:13-52
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:20:13-52
 activity#com.wallaby.otaku.ui.scan.LectureActivity
-ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:21:9-24:51
-	android:screenOrientation
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:24:13-49
+ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:25:9-27:51
 	android:theme
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:23:13-48
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:27:13-48
 	android:name
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:22:13-52
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:26:13-52
 activity#com.wallaby.otaku.ExploreFirstLevel
-ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:25:9-55
-	android:name
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:25:19-52
-activity#com.wallaby.otaku.MainActivity
-ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:27:9-36:20
+ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:30:9-31:51
 	android:screenOrientation
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:30:13-49
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:31:13-49
+	android:name
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:30:19-52
+activity#com.wallaby.otaku.MainActivity
+ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:33:9-42:20
+	android:screenOrientation
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:36:13-49
 	android:label
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:29:13-45
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:35:13-45
 	android:name
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:28:13-41
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:34:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:40:27-74
 uses-sdk
 INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml

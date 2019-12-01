@@ -1,15 +1,21 @@
 package com.wallaby.otaku.ui.scan;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GestureDetectorCompat;
 
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Display;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -21,12 +27,17 @@ import com.wallaby.otaku.SDcardAccess.ExternalStorage;
 import com.wallaby.otaku.internal_database.OtakuDatabase;
 import com.wallaby.otaku.models.Chapitre;
 import com.wallaby.otaku.models.Manga;
-import com.wallaby.otaku.ui.OnSwipeTouchListener;
 
 import java.io.File;
 import java.util.ArrayList;
 
-public class LectureActivity extends AppCompatActivity {
+public class LectureActivity extends AppCompatActivity implements
+        GestureDetector.OnGestureListener,
+        GestureDetector.OnDoubleTapListener{
+
+    private GestureDetectorCompat mDetector;
+    private static final int SWIPE_THRESHOLD = 100;
+    private static final int SWIPE_VELOCITY_THRESHOLD = 100;
 
     private String selected_manga;
     private int selected_chapter;
@@ -41,6 +52,12 @@ public class LectureActivity extends AppCompatActivity {
 
     private int current_page;
 
+    private MediaPlayer themeSong;
+    private Button playThemeButton;
+    private boolean playThemeOrstop;
+    private boolean showPlayButton;
+    private boolean playableTheme;
+
     int screenWidth;
     int screenHeight;
 
@@ -49,7 +66,15 @@ public class LectureActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lecture);
 
+        otakuDatabase = new OtakuDatabase(getApplicationContext());
+
+        mDetector = new GestureDetectorCompat(this,this);
+
         hideSystemUI();
+
+        this.showPlayButton = false;
+        this.playThemeOrstop = false;
+        this.playThemeButton = findViewById(R.id.playThemeSong);
 
         this.readingSD = findViewById(R.id.readingSD);
         this.current_page = 0;
@@ -61,7 +86,6 @@ public class LectureActivity extends AppCompatActivity {
         screenWidth = size.x;
         screenHeight = size.y;
 
-        otakuDatabase = new OtakuDatabase(getApplicationContext());
 
         single_or_continue = getIntent().getStringExtra("single_or_continue");
 
@@ -85,37 +109,21 @@ public class LectureActivity extends AppCompatActivity {
 
     public void SingleReading(){
         ExternalStorage externalStorage = new ExternalStorage();
+        Manga manga = externalStorage.getMangaByName(selected_manga);
         chapitre = externalStorage.getMangaChapter(selected_manga, selected_chapter);
+
+        // set la musique de fond
+        if(!manga.getThemeSong().equals("")){
+            Uri myUri = Uri.parse(manga.getThemeSong());
+            themeSong = MediaPlayer.create(getApplicationContext(), myUri);
+            this.playableTheme = true;
+        }
+        else {
+            this.playableTheme = false;
+        }
 
         ResizeAndDisplayImage(chapitre.getPagesPath().get(current_page));
 
-        readingSD.setOnTouchListener(new OnSwipeTouchListener(getApplicationContext()){
-            //retour en arriere
-            public void onSwipeRight() {
-                if(current_page - 1 >= 0){
-                    current_page = current_page - 1;
-                    ResizeAndDisplayImage(chapitre.getPagesPath().get(current_page));
-
-                    otakuDatabase.updateChapterPageByManga(selected_manga, chapitre.getNumChapitre() , current_page);
-                }
-                else {
-                    current_page = 0;
-                }
-            }
-
-            //avancer d'une page
-            @Override
-            public void onSwipeLeft() {
-                if(current_page + 1 <= chapitre.getPagesPath().size()-1){
-                    current_page = current_page + 1;
-                    ResizeAndDisplayImage(chapitre.getPagesPath().get(current_page));
-                    otakuDatabase.updateChapterPageByManga(selected_manga, chapitre.getNumChapitre() , current_page);
-                }
-                else {
-                    Toast.makeText(getApplicationContext(), "end of chapter", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
     }
 
     public void ContinueReading(){
@@ -123,43 +131,18 @@ public class LectureActivity extends AppCompatActivity {
         Manga manga = externalStorage.getMangaByName(selected_manga);
         completeBook = manga.getCompleteBook();
 
+        // set la musique de fond
+        if(!manga.getThemeSong().equals("")){
+            Uri myUri = Uri.parse(manga.getThemeSong());
+            themeSong = MediaPlayer.create(getApplicationContext(), myUri);
+            this.playableTheme = true;
+        }
+        else {
+            this.playableTheme = false;
+        }
+
+
         ResizeAndDisplayImage(completeBook.get(current_page));
-
-        readingSD.setOnTouchListener(new OnSwipeTouchListener(getApplicationContext()){
-            //retour en arriere
-            public void onSwipeRight() {
-                if(current_page - 1 >= 0){
-                    current_page = current_page - 1;
-                    ResizeAndDisplayImage(completeBook.get(current_page));
-
-                    int current_chapitre = Integer.parseInt(completeBook.get(current_page).split("/")[completeBook.get(current_page).split("/").length -2]);
-
-                    //mise à jour de la derniere page lue
-                    otakuDatabase.updateResumePageByManga(selected_manga, current_chapitre ,current_page);
-                }
-                else {
-                    current_page = 0;
-                }
-            }
-
-            //avancer d'une page
-            @Override
-            public void onSwipeLeft() {
-                if(current_page + 1 <= completeBook.size()-1){
-                    current_page = current_page + 1;
-                    ResizeAndDisplayImage(completeBook.get(current_page));
-
-                    int current_chapitre = Integer.parseInt(completeBook.get(current_page).split("/")[completeBook.get(current_page).split("/").length -2]);
-
-
-                    //mise à jour de la derniere page lue
-                    otakuDatabase.updateResumePageByManga(selected_manga, current_chapitre ,current_page);
-                }
-                else {
-                    Toast.makeText(getApplicationContext(), "end of book", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
     }
 
 
@@ -298,6 +281,10 @@ public class LectureActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
+        if(playableTheme){
+            themeSong.stop();
+        }
+
         switch (single_or_continue){
             case "single":
                 Intent intent = new Intent(getApplicationContext(), ExploreFirstLevel.class);
@@ -317,4 +304,208 @@ public class LectureActivity extends AppCompatActivity {
         }
     }
 
+
+
+
+    // controle des mouvements
+    @Override
+    public boolean onTouchEvent(MotionEvent event){
+        if (this.mDetector.onTouchEvent(event)) {
+            return true;
+        }
+        return super.onTouchEvent(event);
+    }
+
+    // Affichage des options
+    @Override
+    public boolean onSingleTapConfirmed(MotionEvent motionEvent) {
+
+        // si le bouton est caché, on l'affiche
+        if(!this.showPlayButton){
+            this.showPlayButton = true;
+            this.playThemeButton.setVisibility(View.VISIBLE);
+
+            // si il n'y a pas de musique à jouer
+            if(!this.playableTheme){
+                this.playThemeButton.setText(R.string.noThemeSong);
+                this.playThemeButton.setClickable(false);
+            }
+            else {
+                if(this.playThemeOrstop){
+                    this.playThemeButton.setText(R.string.stopThemeSong);
+                }
+                else {
+                    this.playThemeButton.setText(R.string.playThemeSong);
+                }
+            }
+        }
+
+        // faire disparaitre le boutton
+        else {
+            this.showPlayButton = false;
+            this.playThemeButton.setVisibility(View.GONE);
+        }
+
+        return false;
+    }
+
+    @Override
+    public boolean onDoubleTap(MotionEvent motionEvent) {
+        return false;
+    }
+
+    @Override
+    public boolean onDoubleTapEvent(MotionEvent motionEvent) {
+        return false;
+    }
+
+    @Override
+    public boolean onDown(MotionEvent motionEvent) {
+        return false;
+    }
+
+    @Override
+    public void onShowPress(MotionEvent motionEvent) {
+
+    }
+
+    @Override
+    public boolean onSingleTapUp(MotionEvent motionEvent) {
+        return false;
+    }
+
+    @Override
+    public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
+        return false;
+    }
+
+    @Override
+    public void onLongPress(MotionEvent motionEvent) {
+
+    }
+
+    // changement de page
+    @Override
+    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+        boolean result = false;
+        try {
+            float diffY = e2.getY() - e1.getY();
+            float diffX = e2.getX() - e1.getX();
+            if (Math.abs(diffX) > Math.abs(diffY)) {
+                if (Math.abs(diffX) > SWIPE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD) {
+                    if (diffX > 0) {
+                        onSwipeRight();
+                    } else {
+                        onSwipeLeft();
+                    }
+                    result = true;
+                }
+            }
+            else if (Math.abs(diffY) > SWIPE_THRESHOLD && Math.abs(velocityY) > SWIPE_VELOCITY_THRESHOLD) {
+                if (diffY > 0) {
+                    onSwipeBottom();
+                } else {
+                    onSwipeTop();
+                }
+                result = true;
+            }
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }
+        return result;
+    }
+
+    public void onSwipeRight() {
+        switch (single_or_continue){
+            case "single":
+                if(current_page - 1 >= 0){
+                    current_page = current_page - 1;
+                    ResizeAndDisplayImage(chapitre.getPagesPath().get(current_page));
+
+                    otakuDatabase.updateChapterPageByManga(selected_manga, chapitre.getNumChapitre() , current_page);
+                }
+                else {
+                    current_page = 0;
+                }
+                break;
+
+            case "continue":
+                if(current_page - 1 >= 0){
+                    current_page = current_page - 1;
+                    ResizeAndDisplayImage(completeBook.get(current_page));
+
+                    int current_chapitre = Integer.parseInt(completeBook.get(current_page).split("/")[completeBook.get(current_page).split("/").length -2]);
+
+                    //mise à jour de la derniere page lue
+                    otakuDatabase.updateResumePageByManga(selected_manga, current_chapitre ,current_page);
+                }
+                else {
+                    current_page = 0;
+                }
+                break;
+        }
+    }
+
+    public void onSwipeLeft() {
+        switch (single_or_continue){
+            case "single":
+                if(current_page + 1 <= chapitre.getPagesPath().size()-1){
+                    current_page = current_page + 1;
+                    ResizeAndDisplayImage(chapitre.getPagesPath().get(current_page));
+                    otakuDatabase.updateChapterPageByManga(selected_manga, chapitre.getNumChapitre() , current_page);
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "end of chapter", Toast.LENGTH_SHORT).show();
+                }
+                break;
+
+            case "continue":
+                if(current_page + 1 <= completeBook.size()-1){
+                    current_page = current_page + 1;
+                    ResizeAndDisplayImage(completeBook.get(current_page));
+
+                    int current_chapitre = Integer.parseInt(completeBook.get(current_page).split("/")[completeBook.get(current_page).split("/").length -2]);
+
+
+                    //mise à jour de la derniere page lue
+                    otakuDatabase.updateResumePageByManga(selected_manga, current_chapitre ,current_page);
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "end of book", Toast.LENGTH_SHORT).show();
+                }
+                break;
+        }
+
+    }
+
+    public void onSwipeTop() {
+    }
+
+    public void onSwipeBottom() {
+    }
+
+    // lancer et arreter le theme sonnore
+    public void ControlThemePlay(View v){
+        if(this.playThemeOrstop){
+            this.playThemeOrstop = false;
+
+            themeSong.stop();
+            themeSong.reset();
+
+            this.playThemeButton.setText(R.string.playThemeSong);
+        }
+        else {
+            this.playThemeOrstop = true;
+
+            ExternalStorage externalStorage = new ExternalStorage();
+            Manga manga = externalStorage.getMangaByName(selected_manga);
+
+            Uri myUri = Uri.parse(manga.getThemeSong());
+            themeSong = MediaPlayer.create(getApplicationContext(), myUri);
+            this.playableTheme = true;
+
+            themeSong.start();
+            this.playThemeButton.setText(R.string.stopThemeSong);
+        }
+    }
 }
