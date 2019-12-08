@@ -27,7 +27,7 @@ public class AnimeFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new HomeAnimeAdapter( getContext());
+        mAdapter = new HomeAnimeAdapter(getContext());
         recyclerView.setAdapter(mAdapter);
 
 

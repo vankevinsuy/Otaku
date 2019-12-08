@@ -98,7 +98,9 @@ public class Anime {
                     }
                     else {
                         //ajouter les épisodes ou les films
-                        listEpisodePath.add(file.getPath());
+                        if(!file.getPath().contains("._")){
+                            listEpisodePath.add(file.getPath());
+                        }
                     }
                 }
 
