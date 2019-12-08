@@ -8,9 +8,19 @@
 
     <ImageView
         android:id="@+id/readingSD"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:scrollbarAlwaysDrawVerticalTrack="true"/>
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:contentDescription="@string/reading_description"/>
+
+    <Button
+        android:id="@+id/playThemeSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:onClick="ControlThemePlay"/>
 
 </RelativeLayout>

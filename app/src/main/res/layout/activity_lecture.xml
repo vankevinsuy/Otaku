@@ -10,6 +10,17 @@
         android:id="@+id/readingSD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/reading_description"/>
+
+    <Button
+        android:id="@+id/playThemeSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:onClick="ControlThemePlay"/>
+
 
 </RelativeLayout>

@@ -72,8 +72,9 @@ public class HomeScanAdapter extends RecyclerView.Adapter<HomeScanAdapter.MyView
                 Intent intent = new Intent(mContext, ExploreFirstLevel.class);
                 intent.putExtra("selection", "scan");
                 intent.putExtra("selected_manga", allManga.get(position).getName());
-                mContext.startActivity(intent);
                 ((MainActivity)mContext).finish();
+
+                mContext.startActivity(intent);
 
             }
         });
@@ -84,6 +85,7 @@ public class HomeScanAdapter extends RecyclerView.Adapter<HomeScanAdapter.MyView
                 Intent intent = new Intent(mContext, LectureActivity.class);
                 intent.putExtra("selection_manga", holder.book_title.getText().toString());
                 intent.putExtra("single_or_continue", "continue");
+                ((MainActivity)mContext).finish();
 
                 mContext.startActivity(intent);
             }

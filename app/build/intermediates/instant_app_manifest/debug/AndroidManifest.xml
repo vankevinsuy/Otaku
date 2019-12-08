@@ -24,7 +24,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.wallaby.otaku.ui.anime.SaisonExplorerActivity" />
+        <activity
+            android:name="com.wallaby.otaku.ui.anime.SaisonExplorerActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.wallaby.otaku.ui.VideoPlayingActivity"
             android:screenOrientation="sensorLandscape"
@@ -32,10 +34,13 @@
         <activity
             android:name="com.wallaby.otaku.ui.scan.LectureActivity"
             android:theme="@style/LectureTheme" />
-        <activity android:name="com.wallaby.otaku.ExploreFirstLevel" />
+        <activity
+            android:name="com.wallaby.otaku.ExploreFirstLevel"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.wallaby.otaku.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

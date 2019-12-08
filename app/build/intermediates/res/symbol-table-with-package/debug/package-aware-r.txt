@@ -1188,6 +1188,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id chapter_cardview
 id checkbox
 id chronometer
 id clip_horizontal
@@ -1227,6 +1228,7 @@ id fill_horizontal
 id fill_vertical
 id filled
 id firstLevelEpisodeOrChapterRecyclerview
+id firstPageImg
 id fixed
 id flow
 id forever
@@ -1283,6 +1285,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id num_chapter
 id outline
 id packed
 id parallax
@@ -1291,6 +1294,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id playThemeSong
 id play_and_stop
 id progress_circular
 id progress_horizontal
@@ -1460,6 +1464,7 @@ layout item_first_level_saison
 layout item_home_anime
 layout item_home_movie
 layout item_home_scan
+layout item_scan_chapter_selection
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1568,17 +1573,20 @@ string lastChapitre
 string mtrl_chip_close_icon_content_description
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string noThemeSong
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string playThemeSong
 string project_id
 string quitAppTittle
 string quitAppVerif
 string resumeButton
 string search_menu_title
 string status_bar_notification_info_overflow
+string stopThemeSong
 string title_Scan
 string title_anime
 string title_movie

@@ -18,6 +18,7 @@ import com.wallaby.otaku.R;
 import com.wallaby.otaku.SDcardAccess.ExternalStorage;
 import com.wallaby.otaku.models.Movie;
 import com.wallaby.otaku.ui.VideoPlayingActivity;
+import com.wallaby.otaku.ui.movie.MovieFragment;
 
 import java.util.ArrayList;
 

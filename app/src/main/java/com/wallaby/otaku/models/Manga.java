@@ -10,12 +10,14 @@ public class Manga {
     private String name;
     private String imageCoverPath;
     private ArrayList<Chapitre> chapitreArrayList;
+    private String themeSong;
 
     public Manga(String folderPath) {
         this.folderPath = folderPath;
         this.name = "";
         this.imageCoverPath = "";
         this.chapitreArrayList = new ArrayList<>();
+        this.themeSong = "";
         initData();
     }
 
@@ -49,13 +51,15 @@ public class Manga {
     }
 
     public int getFirstChapter(){
-        int res = getChapitreArrayList().get(0).getNumChapitre();
-        return res;
+        return getChapitreArrayList().get(0).getNumChapitre();
     }
 
     public int getLastChapter(){
-        int res = getChapitreArrayList().get(getChapitreArrayList().size()-1).getNumChapitre();
-        return res;
+        return getChapitreArrayList().get(getChapitreArrayList().size()-1).getNumChapitre();
+    }
+
+    public String getThemeSong() {
+        return themeSong;
     }
 
     public ArrayList<String> getCompleteBook() {
@@ -89,8 +93,13 @@ public class Manga {
                 chapitreArrayList.add(new Chapitre(file.getPath()));
             }
 
+            // set le cover
             if(file.getName().contains("cover")){
                 imageCoverPath = file.getPath();
+            }
+
+            if(file.getName().contains("themesong")){
+                themeSong = file.getPath();
             }
         }
 

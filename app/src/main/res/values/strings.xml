@@ -15,4 +15,13 @@
 
     <string name="quitAppTittle">Quitt app ?</string>
     <string name="quitAppVerif">Are you sure you want to exit ?</string>
+
+    <string name="playThemeSong">Play theme song</string>
+    <string name="stopThemeSong">Stop theme song</string>
+    <string name="noThemeSong">No theme song available</string>
+
+    <string name="reading_description">current page reading</string>
+
+
+
 </resources>
