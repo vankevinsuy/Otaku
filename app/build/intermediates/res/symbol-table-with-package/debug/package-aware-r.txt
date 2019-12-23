@@ -1583,6 +1583,7 @@ string playThemeSong
 string project_id
 string quitAppTittle
 string quitAppVerif
+string reading_description
 string resumeButton
 string search_menu_title
 string status_bar_notification_info_overflow

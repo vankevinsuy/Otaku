@@ -51,14 +51,13 @@ public class MainActivity extends AppCompatActivity {
                 while (cursor.moveToNext()){
                     Log.d("cursor content", Integer.toString(cursor.getInt(0)));
                     otakuDatabase.verifyNewAdding();
-                    otakuDatabase.FirebaseSyncDatabasesToFirebase();
+                    otakuDatabase.FirebaseSyncDataFromFirebase();
                 }
             }
             else {
                 otakuDatabase.initiate_first_use();
                 otakuDatabase.FirebaseSyncDataFromFirebase();
             }
-
 
 
             BottomNavigationView navView = findViewById(R.id.nav_view);
