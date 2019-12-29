@@ -9,14 +9,31 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8668922-e2cb-4a05-98b1-72212d19821c" name="Default Changelist" comment="ajout d'un flag Intent.FLAG_ACTIVITY_NEW_TASK dans FirstLevelAnimeAdaptor pour pouvoir lire les videos séléctionnée sur tablette">
+    <list default="true" id="f8668922-e2cb-4a05-98b1-72212d19821c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/internal_database/OtakuDatabase$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/internal_database/OtakuDatabase$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/internal_database/OtakuDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/internal_database/OtakuDatabase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$MyViewHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$MyViewHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$MyViewHolder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter$MyViewHolder.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelScanAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelScanAdapter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +44,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="R52MA02BQKZ" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="ce051605bb63751a03" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -36,39 +53,12 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/ui/VideoPlayingActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-              <folding>
-                <element signature="method#onWindowFocusChanged#0;class#VideoPlayingActivity#0" />
-                <element signature="method#hideSystemUI#0;class#VideoPlayingActivity#0" />
-                <element signature="method#showSystemUI#0;class#VideoPlayingActivity#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/ExploreFirstLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="56" column="25" lean-forward="true" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelScanAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getItemCount#0;class#FirstLevelAnimeAdapter#0" />
-              </folding>
+            <state relative-caret-position="262">
+              <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -145,7 +135,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/HomeScanAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/ExploreFirstLevel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelMovieAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelScanAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/models/Manga.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
@@ -159,6 +148,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/ui/VideoPlayingActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelAnimeAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelScanAdapter.java" />
       </list>
     </option>
   </component>
@@ -203,13 +193,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="R52MA02BQKZ" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-12-16T23:18:40.977Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="ce051605bb63751a03" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-12-29T14:58:19.398Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="project.structure.last.edited" value="Project" />
@@ -349,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577116323527</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ajout d'un flag Intent.FLAG_ACTIVITY_NEW_TASK dans FirstLevelAnimeAdaptor pour pouvoir lire les videos séléctionnée sur tablette">
+      <created>1577460073958</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577460073958</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -371,7 +368,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.8937677" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5007153" side_tool="true" weight="0.28328612" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49928468" weight="0.27903682" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3286119" />
       <window_info anchor="bottom" x="23" y="292" width="1490" height="239" id="Android Profiler" maximized="true" order="9" type="WINDOWED" weight="0.3385269" />
@@ -454,7 +451,8 @@
     <MESSAGE value="set orientation des pages dans la manifest" />
     <MESSAGE value="ajout de la musique de fond, restructuration des fonctions de gestes" />
     <MESSAGE value="synchro des appareils sur firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="synchro des appareils sur firebase" />
+    <MESSAGE value="ajout d'un flag Intent.FLAG_ACTIVITY_NEW_TASK dans FirstLevelAnimeAdaptor pour pouvoir lire les videos séléctionnée sur tablette" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout d'un flag Intent.FLAG_ACTIVITY_NEW_TASK dans FirstLevelAnimeAdaptor pour pouvoir lire les videos séléctionnée sur tablette" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -556,12 +554,12 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_home_anime.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="52" column="28" selection-end-line="74" selection-end-column="36" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/models/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -571,12 +569,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_home_movie.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="42" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="42" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -624,20 +622,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_explore.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_scan_chapter_selection.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/ui/scan/ScanFragment.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -647,12 +645,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_home_scan.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="71" column="43" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="50" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/SaisonExplorerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -676,12 +674,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/activity_lecture.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/models/Manga.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -697,12 +695,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lecture.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -713,20 +711,20 @@
       <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.0.0/bcd167792ec03e930d5c8345c99ae07b2627de84/fragment-1.0.0-sources.jar!/androidx/fragment/app/FragmentManager.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -768,20 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="324" column="25" selection-start-line="324" selection-start-column="25" selection-end-line="324" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/HomeScanAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelScanAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>
@@ -964,25 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/ui/VideoPlayingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding>
-            <element signature="method#onWindowFocusChanged#0;class#VideoPlayingActivity#0" />
-            <element signature="method#hideSystemUI#0;class#VideoPlayingActivity#0" />
-            <element signature="method#showSystemUI#0;class#VideoPlayingActivity#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/ExploreFirstLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="56" column="25" lean-forward="true" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/content/Intent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5270">
@@ -998,6 +963,39 @@
             <element signature="imports" expanded="true" />
             <element signature="method#getItemCount#0;class#FirstLevelAnimeAdapter#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/ExploreFirstLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/ui/VideoPlayingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding>
+            <element signature="method#onWindowFocusChanged#0;class#VideoPlayingActivity#0" />
+            <element signature="method#hideSystemUI#0;class#VideoPlayingActivity#0" />
+            <element signature="method#showSystemUI#0;class#VideoPlayingActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/HomeScanAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/wallaby/otaku/recyclerAdapters/FirstLevelScanAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="66" column="63" selection-start-line="66" selection-start-column="63" selection-end-line="66" selection-end-column="63" />
         </state>
       </provider>
     </entry>
