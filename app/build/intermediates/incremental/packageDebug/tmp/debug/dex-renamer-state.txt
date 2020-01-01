@@ -1,4 +1,4 @@
-#Sun Dec 29 23:58:40 JST 2019
+#Wed Jan 01 21:54:17 JST 2020
 base.0=C\:\\Users\\vanke\\Documents\\Otaku\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
