@@ -84,6 +84,7 @@ public class FirstLevelAnimeAdapter extends RecyclerView.Adapter<FirstLevelAnime
                     intent.putExtra("selected_saison", anime.getListSaison().get(position).getNameSaison());
                     intent.putExtra("selected_anime", anime.getName());
 
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     mContext.startActivity(intent);
                 }
             });

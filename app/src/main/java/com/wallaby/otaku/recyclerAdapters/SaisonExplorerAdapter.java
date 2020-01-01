@@ -52,6 +52,7 @@ public class SaisonExplorerAdapter extends RecyclerView.Adapter<SaisonExplorerAd
                 intent.putExtra("video_path", selectedSaison.getListEpisodePath().get(position));
                 otakuDatabase.updateResumeAnime(selectedSaison.getFromAnime(), selectedSaison.getListEpisodePath().get(position));
 
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 mContext.startActivity(intent);
             }
         });

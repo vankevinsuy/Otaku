@@ -53,6 +53,7 @@ public class FirstLevelMovieAdapter extends RecyclerView.Adapter<FirstLevelMovie
                 Intent intent = new Intent(mContext, VideoPlayingActivity.class);
                 intent.putExtra("video_path", allMovie.get(position).getMoviePath());
 
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 mContext.startActivity(intent);
             }
         });
