@@ -65,6 +65,7 @@ public class OtakuDatabase extends SQLiteOpenHelper {
         super(context, DATA_BASE_name, null, 1);
     }
 
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_TABLE_MANGA);
@@ -401,7 +402,7 @@ public class OtakuDatabase extends SQLiteOpenHelper {
         database.close();
     }
 
-    // mettre ce qu'on a en base locale à jour sur firebase
+    // récupérer les données depuis firebase
     public void FirebaseSyncDataFromFirebase(){
         FirebaseDatabase firebase = FirebaseDatabase.getInstance();
         DatabaseReference myRef = firebase.getReference();

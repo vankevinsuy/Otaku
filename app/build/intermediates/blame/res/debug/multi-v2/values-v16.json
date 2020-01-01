@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\vanke\\Documents\\Otaku\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\vanke\\.gradle\\caches\\transforms-2\\files-2.1\\2416e2a4ed3971a70d13592c2114d09d\\appcompat-1.0.2\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\vanke\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\vanke\\.gradle\\caches\\transforms-2\\files-2.1\\668f92656ea417a5dbfea6d82592adcd\\core-1.0.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\vanke\\.gradle\\caches\\transforms-2\\files-2.1\\16eb53875ba78320b1fcf5cac2c4c8c7\\core-1.0.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

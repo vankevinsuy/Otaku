@@ -136,8 +136,6 @@ public class ExternalStorage {
                 break;
             }
         }
-
-
         return res;
     }
 

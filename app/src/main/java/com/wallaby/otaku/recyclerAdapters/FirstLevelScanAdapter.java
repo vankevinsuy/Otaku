@@ -64,6 +64,7 @@ public class FirstLevelScanAdapter extends RecyclerView.Adapter<FirstLevelScanAd
                 intent.putExtra("selection_manga", selected_manga);
                 intent.putExtra("single_or_continue", "single");
 
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 mContext.startActivity(intent);
             }
         });

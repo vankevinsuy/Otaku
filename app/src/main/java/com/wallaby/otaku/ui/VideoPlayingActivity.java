@@ -19,6 +19,7 @@ import android.widget.VideoView;
 import com.wallaby.otaku.MainActivity;
 import com.wallaby.otaku.R;
 import com.wallaby.otaku.SDcardAccess.ExternalStorage;
+import com.wallaby.otaku.internal_database.OtakuDatabase;
 import com.wallaby.otaku.models.Anime;
 
 import java.lang.ref.WeakReference;
@@ -32,6 +33,7 @@ public class VideoPlayingActivity extends AppCompatActivity {
     private RelativeLayout baseRelativeView;
     private SeekBar seekBar;
     private TextView videoName;
+    private OtakuDatabase otakuDatabase;
 
 
     @Override
@@ -40,6 +42,8 @@ public class VideoPlayingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_video_player);
 
         String video_path = getIntent().getStringExtra("video_path");
+
+        otakuDatabase = new OtakuDatabase(getApplicationContext());
 
         playPauseButton = findViewById(R.id.play_and_stop);
         hideUI = false;
@@ -174,6 +178,8 @@ public class VideoPlayingActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        otakuDatabase.FirebaseSyncDatabasesToFirebase();
+
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         finish();
 
