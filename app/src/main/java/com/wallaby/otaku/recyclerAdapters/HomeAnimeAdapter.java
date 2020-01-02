@@ -16,7 +16,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.wallaby.otaku.ExploreFirstLevel;
-import com.wallaby.otaku.MainActivity;
+import com.wallaby.otaku.PermissionAndUpdateDataActivity;
 import com.wallaby.otaku.R;
 import com.wallaby.otaku.SDcardAccess.ExternalStorage;
 import com.wallaby.otaku.internal_database.OtakuDatabase;
@@ -67,7 +67,7 @@ public class HomeAnimeAdapter extends RecyclerView.Adapter<HomeAnimeAdapter.MyVi
                 intent.putExtra("selection", "anime");
                 intent.putExtra("selected_anime", allAnime.get(position).getName());
                 mContext.startActivity(intent);
-                ((MainActivity)mContext).finish();
+                ((PermissionAndUpdateDataActivity)mContext).finish();
 
             }
         });

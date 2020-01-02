@@ -30,7 +30,7 @@ public class ExploreFirstLevel extends AppCompatActivity {
         goHomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PermissionAndUpdateDataActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -90,7 +90,7 @@ public class ExploreFirstLevel extends AppCompatActivity {
     //méthode de retour au menu principal
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), PermissionAndUpdateDataActivity.class);
         finish();
 
         startActivity(intent);

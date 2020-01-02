@@ -146,14 +146,14 @@ ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:30:9-
 		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:31:13-49
 	android:name
 		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:30:19-52
-activity#com.wallaby.otaku.MainActivity
+activity#com.wallaby.otaku.PermissionAndUpdateDataActivity
 ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:33:9-42:20
 	android:screenOrientation
 		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:36:13-49
 	android:label
 		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:35:13-45
 	android:name
-		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:34:13-41
+		ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:34:13-60
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN

@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.wallaby.otaku.ExploreFirstLevel;
-import com.wallaby.otaku.MainActivity;
+import com.wallaby.otaku.PermissionAndUpdateDataActivity;
 import com.wallaby.otaku.R;
 import com.wallaby.otaku.SDcardAccess.ExternalStorage;
 import com.wallaby.otaku.internal_database.OtakuDatabase;
@@ -298,7 +298,7 @@ public class LectureActivity extends AppCompatActivity implements
                 break;
 
             case "continue":
-                Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent2 = new Intent(getApplicationContext(), PermissionAndUpdateDataActivity.class);
                 finish();
 
                 startActivity(intent2);

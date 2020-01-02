@@ -69,8 +69,8 @@
 38-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:31:13-49
 39        <activity
 39-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:33:9-42:20
-40            android:name="com.wallaby.otaku.MainActivity"
-40-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:34:13-41
+40            android:name="com.wallaby.otaku.PermissionAndUpdateDataActivity"
+40-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:34:13-60
 41            android:label="@string/app_name"
 41-->C:\Users\vanke\Documents\Otaku\app\src\main\AndroidManifest.xml:35:13-45
 42            android:screenOrientation="portrait" >

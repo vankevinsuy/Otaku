@@ -37,7 +37,7 @@
             android:name="com.wallaby.otaku.ExploreFirstLevel"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.wallaby.otaku.MainActivity"
+            android:name="com.wallaby.otaku.PermissionAndUpdateDataActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>

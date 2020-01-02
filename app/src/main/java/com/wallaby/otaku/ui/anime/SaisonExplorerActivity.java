@@ -9,12 +9,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.wallaby.otaku.MainActivity;
+import com.wallaby.otaku.PermissionAndUpdateDataActivity;
 import com.wallaby.otaku.R;
 import com.wallaby.otaku.SDcardAccess.ExternalStorage;
 import com.wallaby.otaku.models.Anime;
 import com.wallaby.otaku.models.Saison;
-import com.wallaby.otaku.recyclerAdapters.FirstLevelScanAdapter;
 import com.wallaby.otaku.recyclerAdapters.SaisonExplorerAdapter;
 
 public class SaisonExplorerActivity extends AppCompatActivity {
@@ -45,7 +44,7 @@ public class SaisonExplorerActivity extends AppCompatActivity {
         goHomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PermissionAndUpdateDataActivity.class);
                 startActivity(intent);
                 finish();
             }

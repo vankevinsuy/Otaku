@@ -20,7 +20,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.wallaby.otaku.internal_database.OtakuDatabase;
 
-public class MainActivity extends AppCompatActivity {
+public class PermissionAndUpdateDataActivity extends AppCompatActivity {
 
 
     @Override
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Cursor cursor = otakuDatabase.get_first_use();
 
 
+        // permission d'accès à la carte sd
         if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.READ_EXTERNAL_STORAGE)
                 == PackageManager.PERMISSION_DENIED) {
             // Requesting the permission
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.activity_main);
 
 
+        // verifier le nom utilisateur
 
             if(cursor.getCount() > 0){
                 while (cursor.moveToNext()){
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else {
                 otakuDatabase.initiate_first_use();
+                otakuDatabase.verifyNewAdding();
                 otakuDatabase.FirebaseSyncDataFromFirebase();
             }
 
@@ -87,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        MainActivity.super.onBackPressed();
+                        PermissionAndUpdateDataActivity.super.onBackPressed();
                         quit();
                         System.exit(0);
                     }

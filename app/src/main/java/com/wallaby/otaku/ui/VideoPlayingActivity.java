@@ -4,25 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.VideoView;
 
-import com.wallaby.otaku.MainActivity;
+import com.wallaby.otaku.PermissionAndUpdateDataActivity;
 import com.wallaby.otaku.R;
-import com.wallaby.otaku.SDcardAccess.ExternalStorage;
 import com.wallaby.otaku.internal_database.OtakuDatabase;
-import com.wallaby.otaku.models.Anime;
-
-import java.lang.ref.WeakReference;
 
 public class VideoPlayingActivity extends AppCompatActivity {
 
@@ -180,7 +173,7 @@ public class VideoPlayingActivity extends AppCompatActivity {
     public void onBackPressed() {
         otakuDatabase.FirebaseSyncDatabasesToFirebase();
 
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(), PermissionAndUpdateDataActivity.class);
         finish();
 
         startActivity(intent);

@@ -21,9 +21,9 @@ public class ExternalStorage {
     private Context context;
     private Activity activity;
 
-    private String ANIME_FOLDER_NAME = "OtakuAppData/Anime";
-    private String SCAN_FOLDER_NAME = "OtakuAppData/Scan Manga";
-    private String MOVIE_FOLDER_NAME = "OtakuAppData/MOVIES";
+    private String ANIME_FOLDER_NAME = ".OtakuAppData/Anime";
+    private String SCAN_FOLDER_NAME = ".OtakuAppData/Scan Manga";
+    private String MOVIE_FOLDER_NAME = ".OtakuAppData/MOVIES";
 
     //constructeur pour la premiere connexion
     public ExternalStorage(Context context, Activity activity) {

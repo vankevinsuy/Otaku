@@ -16,7 +16,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.wallaby.otaku.ExploreFirstLevel;
-import com.wallaby.otaku.MainActivity;
+import com.wallaby.otaku.PermissionAndUpdateDataActivity;
 import com.wallaby.otaku.R;
 import com.wallaby.otaku.SDcardAccess.ExternalStorage;
 import com.wallaby.otaku.internal_database.OtakuDatabase;
@@ -72,7 +72,7 @@ public class HomeScanAdapter extends RecyclerView.Adapter<HomeScanAdapter.MyView
                 Intent intent = new Intent(mContext, ExploreFirstLevel.class);
                 intent.putExtra("selection", "scan");
                 intent.putExtra("selected_manga", allManga.get(position).getName());
-                ((MainActivity)mContext).finish();
+                ((PermissionAndUpdateDataActivity)mContext).finish();
 
                 mContext.startActivity(intent);
 
@@ -85,7 +85,7 @@ public class HomeScanAdapter extends RecyclerView.Adapter<HomeScanAdapter.MyView
                 Intent intent = new Intent(mContext, LectureActivity.class);
                 intent.putExtra("selection_manga", holder.book_title.getText().toString());
                 intent.putExtra("single_or_continue", "continue");
-                ((MainActivity)mContext).finish();
+                ((PermissionAndUpdateDataActivity)mContext).finish();
 
                 mContext.startActivity(intent);
             }
