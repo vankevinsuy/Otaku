@@ -11,6 +11,8 @@
 
     <color name="Lecture_color">#000</color>
 
+    <color name="control_panel">#CC656464</color>
+
 
 
 </resources>

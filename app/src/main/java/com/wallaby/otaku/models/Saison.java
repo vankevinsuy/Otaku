@@ -10,12 +10,15 @@ public class Saison {
     private String nameSaison;
     private String fromAnime;
     private ArrayList<String> listEpisodePath;
+    private ArrayList<String> listRelativeEpisodePath;
+
 
     public Saison(String folderPath, String fromAnime) {
         this.folderPath = folderPath;
         this.nameSaison = "";
         this.fromAnime = fromAnime;
         this.listEpisodePath = new ArrayList<>();
+        this.listRelativeEpisodePath = new ArrayList<>();
 
         initData();
     }
@@ -49,6 +52,21 @@ public class Saison {
 
     public String getFromAnime() {
         return fromAnime;
+    }
+
+    public ArrayList<String> getListRelativeEpisodePath() {
+
+        for(String path : getListEpisodePath()){
+            String anime = path.split("/")[path.split("/").length-3];
+            String saison = path.split("/")[path.split("/").length-2];
+            String episode = path.split("/")[path.split("/").length-1];
+
+            String relativePath = anime + "/" + saison + "/" + episode;
+
+            listRelativeEpisodePath.add(relativePath);
+        }
+
+        return listRelativeEpisodePath;
     }
 
     private void initData(){

@@ -69,7 +69,8 @@ public class FirstLevelAnimeAdapter extends RecyclerView.Adapter<FirstLevelAnime
 
 
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    otakuDatabase.updateResumeAnime(selected_anime, anime.getListEpisodePath().get(position));
+//                    otakuDatabase.updateResumeAnime(selected_anime, anime.getListEpisodePath().get(position));
+                    otakuDatabase.updateResumeAnime(selected_anime, anime.getListRelativeEpisodePath().get(position));
                     mContext.startActivity(intent);
                 }
             });

@@ -77,6 +77,8 @@ public class HomeAnimeAdapter extends RecyclerView.Adapter<HomeAnimeAdapter.MyVi
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, VideoPlayingActivity.class);
                 intent.putExtra("video_path", otakuDatabase.getResumeAnimeEpisode(allAnime.get(position).getName()));
+
+                String r = otakuDatabase.getResumeAnimeEpisode(allAnime.get(position).getName());
                 mContext.startActivity(intent);
             }
         });

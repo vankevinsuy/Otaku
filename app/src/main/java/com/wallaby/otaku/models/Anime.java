@@ -12,6 +12,8 @@ public class Anime {
     private ArrayList<Integer> listEpisode;
     private ArrayList<Saison> listSaison;
     private String coverPath;
+    private ArrayList<String> listRelativeEpisodePath;
+
 
     public Anime(String folderPath) {
         this.folderPath = folderPath;
@@ -20,6 +22,7 @@ public class Anime {
         this.listEpisodePath = new ArrayList<>();
         this.listSaison = new ArrayList<>();
         this.listEpisode = new ArrayList<>();
+        this.listRelativeEpisodePath = new ArrayList<>();
         initData();
     }
 
@@ -65,13 +68,27 @@ public class Anime {
         String res = "";
 
         if(listSaison.size() > 0){
-            res = listSaison.get(0).getListEpisodePath().get(0);
+            res = listSaison.get(0).getListRelativeEpisodePath().get(0);
         }
         if(listEpisodePath.size() > 0){
-            res = listEpisodePath.get(0);
+            res = listRelativeEpisodePath.get(0);
         }
 
         return res;
+    }
+
+    public ArrayList<String> getListRelativeEpisodePath() {
+
+        for(String path : getListEpisodePath()){
+            String anime = path.split("/")[path.split("/").length-2];
+            String episode = path.split("/")[path.split("/").length-1];
+
+            String relativePath = anime + "/" + episode;
+
+            listRelativeEpisodePath.add(relativePath);
+        }
+
+        return listRelativeEpisodePath;
     }
 
     private void initData(){

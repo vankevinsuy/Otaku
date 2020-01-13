@@ -50,7 +50,8 @@ public class SaisonExplorerAdapter extends RecyclerView.Adapter<SaisonExplorerAd
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, VideoPlayingActivity.class);
                 intent.putExtra("video_path", selectedSaison.getListEpisodePath().get(position));
-                otakuDatabase.updateResumeAnime(selectedSaison.getFromAnime(), selectedSaison.getListEpisodePath().get(position));
+//                otakuDatabase.updateResumeAnime(selectedSaison.getFromAnime(), selectedSaison.getListEpisodePath().get(position));
+                otakuDatabase.updateResumeAnime(selectedSaison.getFromAnime(), selectedSaison.getListRelativeEpisodePath().get(position));
 
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 mContext.startActivity(intent);

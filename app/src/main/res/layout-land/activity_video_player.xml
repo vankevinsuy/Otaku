@@ -25,9 +25,13 @@
 
 
     <RelativeLayout
+        android:id="@+id/controlPanelLayout"
         android:layout_width="match_parent"
         android:layout_height="200sp"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:background="@color/control_panel"
+        android:visibility="gone"
+        >
 
         <ImageButton
             android:id="@+id/play_and_stop"
@@ -35,8 +39,7 @@
             android:layout_height="50sp"
             android:text="play"
             android:layout_centerInParent="true"
-            android:visibility="gone"
-            >
+            android:visibility="gone">
         </ImageButton>
 
         <SeekBar

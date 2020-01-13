@@ -21,6 +21,8 @@ import com.wallaby.otaku.models.Manga;
 import java.util.ArrayList;
 
 public class OtakuDatabase extends SQLiteOpenHelper {
+
+    ExternalStorage externalStorage;
     //****DATABASE VARIABLES****//
 
     private static final String DATA_BASE_name = "otaku.db";
@@ -122,14 +124,14 @@ public class OtakuDatabase extends SQLiteOpenHelper {
         for(Anime anime : externalStorage.getAllAnime()){
             contentValues = new ContentValues();
 
-            if(anime.getListSaison().size() > 0 && anime.getListEpisodePath().size()==0){
+            if(anime.getListSaison().size() > 0 && anime.getListRelativeEpisodePath().size()==0){
                 contentValues.put(COL_anime_name, anime.getName());
                 contentValues.put(COL_resume_from_episode, anime.getFirstEpisodePath());
 
                 database.insert(TABLE_anime,null,contentValues);
             }
 
-            if (anime.getListSaison().size() == 0 && anime.getListEpisodePath().size() > 0){
+            if (anime.getListSaison().size() == 0 && anime.getListRelativeEpisodePath().size() > 0){
                 contentValues.put(COL_anime_name, anime.getName());
                 contentValues.put(COL_resume_from_episode, anime.getFirstEpisodePath());
 
@@ -153,6 +155,7 @@ public class OtakuDatabase extends SQLiteOpenHelper {
 
         ArrayList<String> listMangaInBase = new ArrayList<>();
 
+        // mettre à jour la liste des mangas
         // remplir listMangaInBase
         if(cursor.getCount()>0){
             while (cursor.moveToNext()){
@@ -182,8 +185,30 @@ public class OtakuDatabase extends SQLiteOpenHelper {
             }
         }
 
+        // mettre à jour la liste des animes
+        // remplir listMangaInBase
+        cursor = database.rawQuery("SELECT * FROM " + TABLE_anime , null);
+        ArrayList<String> listAnimeInBase = new ArrayList<>();
 
+        if(cursor.getCount()>0){
+            while (cursor.moveToNext()){
+                listAnimeInBase.add(cursor.getString(0));
+            }
+        }
 
+        for(Anime anime : externalStorage.getAllAnime()){
+            if(!listAnimeInBase.contains(anime.getName())){
+                ContentValues contentValues = new ContentValues();
+
+                contentValues.put(COL_anime_name, anime.getName());
+                contentValues.put(COL_resume_from_episode, anime.getFirstEpisodePath());
+
+                database.insert(TABLE_anime,null,contentValues);
+
+                //ajout de l'anime dans firebase
+                myRef.child("Anime").child(anime.getName()).setValue(anime.getFirstEpisodePath());
+            }
+        }
 
 
         database.close();
@@ -334,6 +359,9 @@ public class OtakuDatabase extends SQLiteOpenHelper {
     }
 
     public String getResumeAnimeEpisode(String anime){
+        externalStorage = new ExternalStorage();
+
+        String target = "";
         String res = "";
         SQLiteDatabase database = this.getWritableDatabase();
 
@@ -343,12 +371,14 @@ public class OtakuDatabase extends SQLiteOpenHelper {
         if (cursor.getCount() >0){
             while (cursor.moveToNext()){
                 if(cursor.getString(0).equals(anime)){
-                    res = cursor.getString(1);
+                    target = cursor.getString(1);
                 }
             }
         }
         cursor.close();
         database.close();
+
+        res = externalStorage.getAnimeFolderPath() + "/" + target;
 
         return res;
     }
@@ -412,6 +442,7 @@ public class OtakuDatabase extends SQLiteOpenHelper {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 SQLiteDatabase database = getWritableDatabase();
+
                 // synchro Anime
                 Cursor cursor = database.rawQuery("SELECT * FROM " + TABLE_anime , null);
                 Iterable<DataSnapshot> animeName = dataSnapshot.child("Anime").getChildren();
@@ -498,6 +529,7 @@ public class OtakuDatabase extends SQLiteOpenHelper {
             }
         });
     }
+
 }
 
 

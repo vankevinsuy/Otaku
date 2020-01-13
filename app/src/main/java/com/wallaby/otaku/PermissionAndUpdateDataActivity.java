@@ -47,8 +47,7 @@ public class PermissionAndUpdateDataActivity extends AppCompatActivity {
             setContentView(R.layout.activity_main);
 
 
-        // verifier le nom utilisateur
-
+            // verifier si c'est la première utilisation
             if(cursor.getCount() > 0){
                 while (cursor.moveToNext()){
                     Log.d("cursor content", Integer.toString(cursor.getInt(0)));

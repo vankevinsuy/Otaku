@@ -86,7 +86,13 @@ public class ExternalStorage {
     }
 
 
+    public String getAnimeFolderPath(){
+        String res = "";
 
+        res = getSDcardPath() + "/" + ANIME_FOLDER_NAME + "/";
+
+        return res;
+    }
 
 
     public ArrayList<Manga> getAllManga(){
