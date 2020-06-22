@@ -281,7 +281,7 @@ public class LectureActivity extends AppCompatActivity implements
     @Override
     public void onBackPressed() {
 
-        otakuDatabase.FirebaseSyncDatabasesToFirebase();
+        //otakuDatabase.FirebaseSyncDatabasesToFirebase();
 
         if(playableTheme){
             themeSong.stop();

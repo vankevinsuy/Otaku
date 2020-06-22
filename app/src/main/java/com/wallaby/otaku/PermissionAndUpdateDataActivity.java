@@ -52,13 +52,13 @@ public class PermissionAndUpdateDataActivity extends AppCompatActivity {
                 while (cursor.moveToNext()){
                     Log.d("cursor content", Integer.toString(cursor.getInt(0)));
                     otakuDatabase.verifyNewAdding();
-                    otakuDatabase.FirebaseSyncDataFromFirebase();
+                    //otakuDatabase.FirebaseSyncDataFromFirebase();
                 }
             }
             else {
                 otakuDatabase.initiate_first_use();
                 otakuDatabase.verifyNewAdding();
-                otakuDatabase.FirebaseSyncDataFromFirebase();
+                //otakuDatabase.FirebaseSyncDataFromFirebase();
             }
 
 

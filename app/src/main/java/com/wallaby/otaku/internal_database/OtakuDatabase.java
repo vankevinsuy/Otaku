@@ -148,8 +148,8 @@ public class OtakuDatabase extends SQLiteOpenHelper {
         SQLiteDatabase database = this.getWritableDatabase();
         Cursor cursor = database.rawQuery("SELECT * FROM " + TABLE_manga , null);
 
-        FirebaseDatabase firebase = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = firebase.getReference();
+        //FirebaseDatabase firebase = FirebaseDatabase.getInstance();
+        //DatabaseReference myRef = firebase.getReference();
 
         ExternalStorage externalStorage = new ExternalStorage();
 
@@ -174,13 +174,13 @@ public class OtakuDatabase extends SQLiteOpenHelper {
                 database.insert(TABLE_manga,null,contentValues);
 
                 //lecture par chapitre
-                for(Chapitre chapitre : manga.getChapitreArrayList()){
-                    myRef.child("Scan").child("by_chapter").child(manga.getName()).child(Integer.toString(chapitre.getNumChapitre())).setValue(0);
-                }
+                //for(Chapitre chapitre : manga.getChapitreArrayList()){
+                    //myRef.child("Scan").child("by_chapter").child(manga.getName()).child(Integer.toString(chapitre.getNumChapitre())).setValue(0);
+                //}
 
                 //lecture continue
-                myRef.child("Scan").child("continue").child(manga.getName()).child("chapter").setValue(manga.getFirstChapter());
-                myRef.child("Scan").child("continue").child(manga.getName()).child("page").setValue(0);
+                //myRef.child("Scan").child("continue").child(manga.getName()).child("chapter").setValue(manga.getFirstChapter());
+                //myRef.child("Scan").child("continue").child(manga.getName()).child("page").setValue(0);
 
             }
         }
@@ -206,7 +206,7 @@ public class OtakuDatabase extends SQLiteOpenHelper {
                 database.insert(TABLE_anime,null,contentValues);
 
                 //ajout de l'anime dans firebase
-                myRef.child("Anime").child(anime.getName()).setValue(anime.getFirstEpisodePath());
+                //myRef.child("Anime").child(anime.getName()).setValue(anime.getFirstEpisodePath());
             }
         }
 

@@ -169,7 +169,7 @@ public class VideoPlayingActivity extends AppCompatActivity implements
 
     @Override
     public void onBackPressed() {
-        otakuDatabase.FirebaseSyncDatabasesToFirebase();
+        //otakuDatabase.FirebaseSyncDatabasesToFirebase();
 
         Intent intent = new Intent(getApplicationContext(), PermissionAndUpdateDataActivity.class);
         finish();
