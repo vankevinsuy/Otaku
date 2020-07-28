@@ -2,6 +2,7 @@ package com.wallaby.otaku.models;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.TreeMap;
 
 public class Manga {
@@ -77,6 +78,21 @@ public class Manga {
             }
         }
         return res;
+    }
+
+    public Map<String, Integer> getCompleteBookAsDictContinue()
+    {
+        Map<String, Integer> res = new TreeMap<>();
+        ArrayList<String> completeBook = getCompleteBook();
+
+        int index = 0;
+        for (String pathPage: completeBook)
+        {
+            res.put(pathPage, index);
+            index ++;
+        }
+
+        return  res;
     }
 
     private void initData(){

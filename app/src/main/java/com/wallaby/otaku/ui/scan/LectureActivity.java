@@ -30,6 +30,7 @@ import com.wallaby.otaku.models.Manga;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Map;
 
 public class LectureActivity extends AppCompatActivity implements
         GestureDetector.OnGestureListener,
@@ -44,7 +45,8 @@ public class LectureActivity extends AppCompatActivity implements
     private String single_or_continue;
 
     private Chapitre chapitre;
-    private ArrayList<String>completeBook;
+    private ArrayList<String>completeBook ;
+    private Map<String, Integer> completeBookDicContinue;
 
     private OtakuDatabase otakuDatabase;
 
@@ -110,6 +112,8 @@ public class LectureActivity extends AppCompatActivity implements
     public void SingleReading(){
         ExternalStorage externalStorage = new ExternalStorage();
         Manga manga = externalStorage.getMangaByName(selected_manga);
+        completeBook = manga.getCompleteBook();
+        completeBookDicContinue = manga.getCompleteBookAsDictContinue();
         chapitre = externalStorage.getMangaChapter(selected_manga, selected_chapter);
 
         // set la musique de fond
@@ -130,6 +134,8 @@ public class LectureActivity extends AppCompatActivity implements
         ExternalStorage externalStorage = new ExternalStorage();
         Manga manga = externalStorage.getMangaByName(selected_manga);
         completeBook = manga.getCompleteBook();
+        completeBookDicContinue = manga.getCompleteBookAsDictContinue();
+
 
         // set la musique de fond
         if(!manga.getThemeSong().equals("")){
@@ -289,6 +295,9 @@ public class LectureActivity extends AppCompatActivity implements
 
         switch (single_or_continue){
             case "single":
+                //mise à jour de la derniere page lue
+                otakuDatabase.updateChapterPageByManga(selected_manga, chapitre.getNumChapitre() , current_page);
+
                 Intent intent = new Intent(getApplicationContext(), ExploreFirstLevel.class);
                 intent.putExtra("selected_manga",selected_manga);
                 intent.putExtra("selection","scan");
@@ -298,6 +307,9 @@ public class LectureActivity extends AppCompatActivity implements
                 break;
 
             case "continue":
+                int current_chapitre = Integer.parseInt(completeBook.get(current_page).split("/")[completeBook.get(current_page).split("/").length -2]);
+                otakuDatabase.updateResumePageByManga(selected_manga, current_chapitre ,current_page);
+
                 Intent intent2 = new Intent(getApplicationContext(), PermissionAndUpdateDataActivity.class);
                 finish();
 
@@ -423,8 +435,10 @@ public class LectureActivity extends AppCompatActivity implements
                 if(current_page - 1 >= 0){
                     current_page = current_page - 1;
                     ResizeAndDisplayImage(chapitre.getPagesPath().get(current_page));
-
                     otakuDatabase.updateChapterPageByManga(selected_manga, chapitre.getNumChapitre() , current_page);
+
+                    int index = completeBookDicContinue.get(chapitre.getPagesPath().get(current_page));
+                    otakuDatabase.updateResumePageByManga(selected_manga, chapitre.getNumChapitre() ,index);
                 }
                 else {
                     current_page = 0;
@@ -455,6 +469,9 @@ public class LectureActivity extends AppCompatActivity implements
                     current_page = current_page + 1;
                     ResizeAndDisplayImage(chapitre.getPagesPath().get(current_page));
                     otakuDatabase.updateChapterPageByManga(selected_manga, chapitre.getNumChapitre() , current_page);
+
+                    int index = completeBookDicContinue.get(chapitre.getPagesPath().get(current_page));
+                    otakuDatabase.updateResumePageByManga(selected_manga, chapitre.getNumChapitre() ,index);
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "end of chapter", Toast.LENGTH_SHORT).show();
