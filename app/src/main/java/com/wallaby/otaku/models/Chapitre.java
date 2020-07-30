@@ -28,6 +28,11 @@ public class Chapitre {
 
 
     public ArrayList<String> getPagesPath() {
+
+        if(ListpagesPath.size() == 0){
+            initPagesPath();
+        }
+
         TreeMap<Integer, String> temp = new TreeMap<>();
         ArrayList<String> res = new ArrayList<>();
 
@@ -51,6 +56,10 @@ public class Chapitre {
     }
 
     public int getNumLastPage(){
+        if(ListpagesPath.size() == 0){
+            initPagesPath();
+        }
+
         int res = 0;
         File root = new File(folderPath);
         File[] content = root.listFiles();
@@ -76,11 +85,19 @@ public class Chapitre {
     }
 
     public String getFirstPagePath(){
+        if(ListpagesPath.size() == 0){
+            initPagesPath();
+        }
         return this.ListpagesPath.get(0);
     }
 
 
     private void initData(){
+        // set num chapitre
+        numChapitre = Integer.parseInt(folderPath.split("/")[folderPath.split("/").length - 1]);
+    }
+
+    private void initPagesPath(){
         // set num chapitre
         numChapitre = Integer.parseInt(folderPath.split("/")[folderPath.split("/").length - 1]);
 
